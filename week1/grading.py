@@ -3,13 +3,13 @@ import json
 
 class Grader(object):
     
-    def __init__(self, assignment_key, all_parts=()):
+    def __init__(self, Um74mWYpP7rKN7LR, all_parts=()):
         """
         Assignment key is the way to tell Coursera which problem is being submitted.
         """
         self.submission_page = \
             'https://www.coursera.org/api/onDemandProgrammingScriptSubmissions.v1'
-        self.assignment_key = assignment_key
+        self.assignment_key = Um74mWYpP7rKN7LR
         self.answers = {part: None for part in all_parts}
         
     def set_answer(self, part, answer):
